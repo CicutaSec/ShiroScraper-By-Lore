@@ -2,7 +2,7 @@ A python mirai botnet scraper from shiro (private project for now)
 
 Features:
 
-• Uses Proxies
+• Spoofing/Proxy System
 
 • Brutes SQL Server
 
