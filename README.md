@@ -18,13 +18,13 @@ ShiroScraper Is A Mirai Botnet Scraper (Written In Python) That Scrapes Mirai CN
 
 ##  ℹ️ Features:
 
-• Integrated Spoofing/Proxy System
+* Integrated Spoofing/Proxy System
 
-• Brutes SQL Server
+* Brutes SQL Server
 
-• Injects A Custom Login To The CNC (IF BRUTEFORCE SUCCEEDED)
+* Injects A Custom Login To The CNC (IF BRUTEFORCE SUCCEEDED)
 
-• Port scans For The CNC Port (IF BRUTEFORCE SUCCEEDED)
+* Port scans For The CNC Port (IF BRUTEFORCE SUCCEEDED)
 
 
 ## ⚙️ Requirements:
