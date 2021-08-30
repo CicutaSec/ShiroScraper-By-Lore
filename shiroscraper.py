@@ -29,6 +29,11 @@ except:
     import urllib.request    
 
 
+#change these credentials to your liking // this is the login you are going to inject into to the sql database
+adduser = "shiro"
+addpass = "rulesyou"
+
+
 
 
 #useragents [DO NOT TOUCH!]----------------------------------------------------------------------------------------------------------------------------
@@ -510,20 +515,15 @@ def getproxies():
             proxy = f"http://{proxyip}"
             requests.get(f"https://urlhaus.abuse.ch/downloads/csv_recent/", proxies={"http": proxy, "https": proxy}, headers={"User-Agent":random.choice(useragent)}, timeout = 5)#checks if the proxy is not dead
             print(f"\033[38;2;0;255;152mConnected To \033[38;2;255;95;255m[\033[38;5;99m{proxyip}\033[38;2;255;95;255m]")
-            # if the request is successful, no exception is raised
         except:
-            getproxies() #if proxy timed out, switch to another proxy and loop
+            getproxies() #if proxy timed out, loop again
             pass
         return proxy
 
 
 
-newprompt=True
 
 
-#change these credentials to your liking
-addusr = "shiro"
-addpassw = "rulesyou"
 
 
 global youruser
@@ -618,8 +618,6 @@ admin:pass
 """
 
 
-adduser = "shiro"
-addpass = "rulesyou"
 
 
 
