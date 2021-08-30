@@ -1,4 +1,4 @@
-# A python mirai botnet scraper from shiro (private project for now) // Scraper Released 8/30/2021
+# A Python Mirai Botnet Scraper From Shiro (private project for now) // Scraper Released 8/30/2021
 
 ##  ℹ️ Features:
 
