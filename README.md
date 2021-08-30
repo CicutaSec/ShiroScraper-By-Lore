@@ -4,7 +4,7 @@
 
 Scraper Released 8/30/2021
 
-![Screenshot](screenshot.png)
+![Screenshot](Screenshot.png)
 
 ##  ℹ️ Features:
 
