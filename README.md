@@ -4,7 +4,7 @@
 
 Scraper Released 8/30/2021
 
-## ❓About 
+## ❓About:
 
 ShiroScraper Is A Mirai Scraper That Scrapes Mirai CNC IP's From URLhaus And Validates If Theres A MYSQL Server Running, Then Attempts To Brute The SQL Server, And if The Bruteforce Was Successful Then The Script Portscans The IP For The CNC Port.
 
