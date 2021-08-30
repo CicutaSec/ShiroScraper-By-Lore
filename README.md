@@ -4,7 +4,7 @@
 
 Scraper Released 8/30/2021
 
-## ❓About:
+## ❓ About:
 
 ShiroScraper Is A Mirai Botnet Scraper (Written In Python) That Scrapes Mirai CNC IP's From URLhaus And Validates If Theres A MYSQL Server Running, Then Attempts To Brute The SQL Server, And if The Bruteforce Was Successful Then The Script Portscans The IP For The CNC Port.
 
@@ -19,3 +19,9 @@ ShiroScraper Is A Mirai Botnet Scraper (Written In Python) That Scrapes Mirai CN
 • Injects A Custom Login To The CNC (IF BRUTEFORCE SUCCEEDED)
 
 • Port scans For The CNC Port (IF BRUTEFORCE SUCCEEDED)
+
+
+## ❗️ DISCLAIMER:
+Before One Of You DDOS Skids Go Out Happily Stealing Botnets, PLEASE Know This Is For Educational Purposes Only AND I DO NOT Condone Of DDoSing OR Hosting Any Sort Of Malware Including Botnets.
+
+### I AM NOT RESPONSIBLE FOR ANY DAMAGE CAUSED WHILE USING THIS PROGRAM PLEASE USE AT YOUR OWN RISK!
