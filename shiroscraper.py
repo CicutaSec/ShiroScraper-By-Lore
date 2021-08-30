@@ -781,7 +781,6 @@ print(banner)
 proxyget()
 print("\033[38;5;99mSpoofing All Requests...")
 getproxies()
-scraper()
 while True:
     try:
         
