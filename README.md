@@ -1,5 +1,7 @@
 # A Python Mirai Botnet Scraper From Shiro (private project for now) // Scraper Released 8/30/2021
 
+![Screenshot](screenshot.png)
+
 ##  ℹ️ Features:
 
 • Integrated Spoofing/Proxy System
