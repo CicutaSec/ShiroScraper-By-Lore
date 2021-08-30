@@ -5,7 +5,7 @@
 Scraper Released 8/30/2021
 
 ## ❗️ DISCLAIMER:
-Before One Of You DDOS Skids Go Out Happily Stealing Botnets, PLEASE Know This Is For Educational Purposes Only AND I DO NOT Condone Of DDoSing OR Hosting Any Sort Of Malware Including Botnets.
+Before One Of You DDOS Skids Go Out Happily Stealing Botnets, PLEASE Know This Is For Educational Purposes Only AND I DO NOT Condone Of DDoSing OR Hosting Any Sort Of Malware.
 
 ### I AM NOT RESPONSIBLE FOR ANY DAMAGE CAUSED WHILE USING THIS PROGRAM PLEASE USE AT YOUR OWN RISK!
 
