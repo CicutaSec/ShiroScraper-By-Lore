@@ -19,7 +19,6 @@ try:
     import nmap
 except:
     os.system("pip3 install python-nmap")
-    os.system("pip3 install python3-nmap")
     import nmap
 
 
