@@ -30,4 +30,5 @@ ShiroScraper Is A Mirai Botnet Scraper (Written In Python) That Scrapes Mirai CN
 ## ⚙️ Requirements:
 
 * Python 3
+* And Obviously Pip3 Installed
 
