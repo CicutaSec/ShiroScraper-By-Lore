@@ -4,6 +4,9 @@
 
 Scraper Released 8/30/2021
 
+### Make Sure To Check Out The X Variant Branch In This Repo! // Such A Nice Rewrite<3 Thanks to @133-7
+
+
 ## ❗️ DISCLAIMER:
 Before One Of You DDOS Skids Go Out Happily Stealing Botnets, PLEASE Know This Is For Educational Purposes Only AND I DO NOT Condone Of DDoSing OR Hosting Any Sort Of Malware.
 
