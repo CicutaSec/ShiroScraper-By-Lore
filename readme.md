@@ -37,7 +37,7 @@ ShiroScraper Is A Mirai Botnet Scraper (Written In Python) That Scrapes Mirai CN
 
 1. You Can Either Git Clone It Or Just Download The File "shiroscraper.py" Alone
  
-2. Be In The Same Directory Where "shiroscraper.py" Is Located In
+2. Be In The Same Directory Where "shiroscraper.py" Is Located In.
   
 3. In Your Terminal Type Either "py shiroscraper.py" Or "python shiroscraper.py" Or "python3 shiroscraper.py" // Whichever That Works For You
  
