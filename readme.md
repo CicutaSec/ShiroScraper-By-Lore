@@ -1,4 +1,4 @@
-# ShiroScraper ~ By Lore<3
+# ShiroScraper X Variant ~ By @133-7 <3 // OG By Lore
 
 ## A Python Mirai Botnet Scraper From Shiro (private project for now) 
 
@@ -18,7 +18,7 @@ ShiroScraper Is A Mirai Botnet Scraper (Written In Python) That Scrapes Mirai CN
 
 ##  ℹ️ Features:
 
-* Integrated Spoofing/Proxy System
+* TimeStamps
 
 * Brutes SQL Server
 
