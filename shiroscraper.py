@@ -755,8 +755,6 @@ def scraper():
 
 
 def startclear():
-    global newprompt
-    newprompt = True
     if OS == win:
         os.system('cls')
     else:
