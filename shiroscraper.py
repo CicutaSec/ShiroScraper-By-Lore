@@ -526,7 +526,6 @@ def getproxies():
 
 
 
-global youruser
 win = 'Windows'
 unix = 'Unix'
 if os.name == 'nt':
