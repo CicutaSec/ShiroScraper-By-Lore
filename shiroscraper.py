@@ -655,7 +655,7 @@ def portscan(ip):
 
 
 
-def brute(ip, addusr, addpassw):
+def brute(ip, adduser, addpass):
     if CheckMysql(ip):
            print(f"\033[38;2;255;95;255m[\033[93m{ip}\033[38;2;255;95;255m] \033[38;2;0;255;152mHas MYSQL running...")
     else:
